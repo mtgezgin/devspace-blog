@@ -1,27 +1,30 @@
 {
-  "name": "devspace-blog",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "gray-matter": "^4.0.3",
-    "marked": "^4.1.0",
-    "next": "12.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
-    "sanitize-html": "^2.7.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.9",
-    "eslint": "8.23.1",
-    "eslint-config-next": "12.3.0",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8"
-  }
+	"name": "devspace-blog",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"cache-posts": "node ./scripts/cache.js",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"gray-matter": "^4.0.3",
+		"marked": "^4.1.0",
+		"next": "12.3.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-icons": "^4.4.0",
+		"sanitize-html": "^2.7.1"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.9",
+		"eslint": "8.23.1",
+		"eslint-config-next": "12.3.0",
+		"husky": "^8.0.1",
+		"postcss": "^8.4.16",
+		"tailwindcss": "^3.1.8"
+	}
 }
